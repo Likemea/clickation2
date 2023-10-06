@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container" id=gamecontainer>
+        <h1>Clickation</h1>
+        <p>Click to earn points</p>
+        <button id="clickButton">Click</button>
+        <p>Points: <span id="score">0</span></p>
+        <button id="upgradeButton">Upgrade (Cost: 10P)</button>
+       <button id="automationButton">Automation (Cost: 50P)</button>        <button id="prestigeButton">Prestige (Cost: 2500P)</button>
+<div class="menu">
+    <button id="mainGameButton"><img src="https://thenounproject.com/api/private/icons/2092054/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0" alt="Main Game"><p>Main Game<p></button>
+    <button id="achievementsButton"><img src="https://thenounproject.com/api/private/icons/4235279/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0" alt="Achievements"><p>Achievements<p></button>
+</div>
+
+
+<div class="modal-container" style="display: none;">
+    <div class="modal">
+        <div class="achievements-menu">
+            <h2>Achievements Menu</h2>
+            <h3>Any achievements you unlock will appear here.<h3>
+          <button id="Close">Close</button>
+            <div class="achievement" id="pointsAchievement" style="display: none;">
+                <img src="https://thenounproject.com/api/private/icons/6120800/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0" alt="Achievement Icon" class="small-icon">
+                <p>1B+ Points Reached!</p>
+            </div>
+               <div class="achievement" id="prestigeAchievement" style="display: none;">
+                <img src="https://thenounproject.com/api/private/icons/1921303/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0" alt="Achievement Icon" class="small-icon">
+                <p>Prestige 3 Times!</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="main-game-menu">
+    <h2>Main Game Menu</h2>
+
+</div>
+<div class="notification-box" id="achievementNotification" style="display: none;">
+    <p>Achievement unlocked</p>
+</div>
+  
+</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
